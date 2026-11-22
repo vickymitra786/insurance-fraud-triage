@@ -12,6 +12,10 @@ try {
   $pages = $d.ComputeStatistics(2)
   $d.Close()
 } finally { $w.Quit() }
-New-Item -ItemType Directory -Force (Split-Path -Parent $site) | Out-Null
-Copy-Item $pdf $site -Force
-Write-Output "  wrote paper/fraud_triage.pdf ($pages pages) and site/papers/fraud.pdf"
+# Copy to the website only when the vivekmitra.com folder sits next to this repo.
+if (Test-Path (Split-Path -Parent $site)) {
+  Copy-Item $pdf $site -Force
+  Write-Output "  wrote paper/fraud_triage.pdf ($pages pages) and site/papers/fraud.pdf"
+} else {
+  Write-Output "  wrote paper/fraud_triage.pdf ($pages pages)"
+}

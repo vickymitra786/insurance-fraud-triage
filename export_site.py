@@ -5,7 +5,11 @@ from pathlib import Path
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent
+# Website data goes to the vivekmitra.com folder when it sits next to this repo; otherwise into this repo.
 SITE = HERE.parent.parent / "site" / "data"
+if not SITE.parent.exists():
+    SITE = HERE / "site_data"
+SITE.mkdir(exist_ok=True)
 NAMES = {"gradient_boosting": "Gradient boosting", "logistic_regression": "Logistic regression"}
 COL = {"gradient_boosting": "score_gb", "logistic_regression": "score_lr"}
 r4 = lambda v: round(float(v), 4)
@@ -68,7 +72,7 @@ def main():
     readme = HERE / "README.md"
     text, a, b = readme.read_text(encoding="utf-8"), "<!-- results:start -->", "<!-- results:end -->"
     readme.write_text(text[: text.index(a) + len(a)] + "\n" + "\n".join(lines) + "\n" + text[text.index(b):], encoding="utf-8")
-    print("  wrote site/data/fraud.json, site/data/fraud.card.json and the README results table")
+    print(f"  wrote fraud.json and fraud.card.json to {SITE}, and the README results table")
 
 
 if __name__ == "__main__":

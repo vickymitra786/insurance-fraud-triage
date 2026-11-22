@@ -6,3 +6,4 @@ CLAUDE.md
 paper/node_modules/
 *.pyc
 ~$*
+site_data/
