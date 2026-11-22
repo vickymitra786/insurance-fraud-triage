@@ -1,0 +1,45 @@
+PUBLISH PLAN: "Cost-aware fraud triage for insurance claims: an honest benchmark"
+Author: Vivek Mitra, Independent researcher, vivekmitra.com
+Files: paper/fraud_triage.docx, paper/fraud_triage.pdf (website copy: site/papers/fraud.pdf)
+
+Nothing has been submitted or uploaded. These are the options and the checks to do first.
+
+1. WHERE TO SEND IT (fastest first)
+
+a) arXiv preprint (free, visible within days)
+   - Category: stat.AP (Applications) as primary; cross-list cs.LG.
+   - First-time submitters in a category may need an endorsement from an existing author in that category.
+   - Upload the PDF, or the source if you rebuild it in LaTeX. Choose a licence (CC BY 4.0 is common).
+   - Abstract field: plain text, within arXiv's length limit. The paper's abstract fits.
+
+b) SSRN (free, read by insurance and risk practitioners)
+   - Submit to the insurance and risk-management eJournals.
+   - Needs: PDF, abstract, keywords and JEL codes (suggest G22 Insurance; C53 Forecasting; C45 Neural networks and related topics).
+
+c) Casualty Actuarial Society: E-Forum (practitioner papers) or Variance (peer-reviewed journal)
+   - Good fit: P&C claims, practical method, reproducible code.
+   - Check the current call for papers and formatting rules on casact.org before submitting.
+
+d) Risks (MDPI, open access, peer-reviewed)
+   - Charges an article processing fee. Check the current amount and any waiver policy.
+   - Needs: their Word or LaTeX template, a data availability statement, and an author contribution statement (single author).
+
+e) Longer-term peer review: Journal of Risk and Insurance, North American Actuarial Journal.
+   - These expect more depth: a second dataset, more baselines and a fuller discussion of the literature.
+
+2. BEFORE ANY SUBMISSION: CHECKLIST
+   [ ] Run `python run_all.py` from a clean clone and confirm results/results.json matches the paper and the website.
+   [ ] Push the code to github.com/vickymitra786/insurance-fraud-triage (public) and check that the link in Section 6 works.
+   [ ] Optionally archive a tagged release on Zenodo to get a DOI for the code. Add the DOI to Reproducibility.
+   [ ] Check that every reference resolves (DOIs and URLs) and that the reference style matches the venue.
+   [ ] Data licence: the carclaims table is widely redistributed, but its original licence is not stated by the mirror.
+       Describe it as a "publicly available dataset", do not redistribute the raw file, and keep the download script.
+   [ ] Make sure all money figures are labelled as assumptions (Section 3.5, Table 4, Table 5).
+   [ ] Read the PDF once on paper for page breaks: tables must not split badly and figures must stay near their text.
+   [ ] Confirm the author line on every copy: "Vivek Mitra, Independent researcher, vivekmitra.com".
+   [ ] Conflict of interest and funding statement (most venues ask): "No funding. No competing interests."
+   [ ] Data availability statement: "Public data, downloaded by the released script from a pinned public mirror."
+   [ ] For venues with templates (MDPI, CAS), move the text into their template. The numbers come from results.json.
+
+3. REBUILD AFTER ANY CHANGE
+   python run_all.py   # refreshes results, figures, website data, README table, .docx and .pdf

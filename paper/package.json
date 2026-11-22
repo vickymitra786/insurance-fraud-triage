@@ -1,0 +1,7 @@
+{
+  "name": "fraud-triage-paper",
+  "private": true,
+  "description": "Builds the fraud triage paper from results/results.json. Author: Vivek Mitra",
+  "license": "AGPL-3.0-only",
+  "dependencies": { "docx": "9.5.1" }
+}

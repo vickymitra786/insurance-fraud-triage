@@ -1,0 +1,794 @@
+{
+ "data": {
+  "rows": 15420,
+  "frauds": 923,
+  "fraud_rate": 0.05985732814526589,
+  "by_year": [
+   {
+    "year": 1994,
+    "claims": 6142,
+    "frauds": 409
+   },
+   {
+    "year": 1995,
+    "claims": 5195,
+    "frauds": 301
+   },
+   {
+    "year": 1996,
+    "claims": 4083,
+    "frauds": 213
+   }
+  ],
+  "revision": "eb82fee0a992bccbf63cc667f2b044cd396c9a5c"
+ },
+ "split": {
+  "train_claims": 11337,
+  "test_claims": 4083,
+  "test_frauds": 213
+ },
+ "tuning": {
+  "best": {
+   "logistic_regression": {
+    "model": "logistic_regression",
+    "fields": "no_calendar_no_rep",
+    "C": 1.0,
+    "valid_pr_auc": 0.1532110821054638
+   },
+   "gradient_boosting": {
+    "model": "gradient_boosting",
+    "fields": "no_calendar_no_rep",
+    "leaves": 15,
+    "min_leaf": 20,
+    "trees": 301,
+    "valid_pr_auc": 0.198986582327352
+   }
+  },
+  "grid": [
+   {
+    "model": "logistic_regression",
+    "fields": "all_fields",
+    "C": 0.001,
+    "valid_pr_auc": 0.11107284123532662
+   },
+   {
+    "model": "logistic_regression",
+    "fields": "all_fields",
+    "C": 0.01,
+    "valid_pr_auc": 0.11342263015635
+   },
+   {
+    "model": "logistic_regression",
+    "fields": "all_fields",
+    "C": 0.1,
+    "valid_pr_auc": 0.10920560537887848
+   },
+   {
+    "model": "logistic_regression",
+    "fields": "all_fields",
+    "C": 1.0,
+    "valid_pr_auc": 0.10581772085662854
+   },
+   {
+    "model": "gradient_boosting",
+    "fields": "all_fields",
+    "leaves": 4,
+    "min_leaf": 20,
+    "trees": 112,
+    "valid_pr_auc": 0.11862005878839288
+   },
+   {
+    "model": "gradient_boosting",
+    "fields": "all_fields",
+    "leaves": 4,
+    "min_leaf": 100,
+    "trees": 128,
+    "valid_pr_auc": 0.110851474880797
+   },
+   {
+    "model": "gradient_boosting",
+    "fields": "all_fields",
+    "leaves": 15,
+    "min_leaf": 20,
+    "trees": 68,
+    "valid_pr_auc": 0.15069806110103123
+   },
+   {
+    "model": "gradient_boosting",
+    "fields": "all_fields",
+    "leaves": 15,
+    "min_leaf": 100,
+    "trees": 163,
+    "valid_pr_auc": 0.10750263813819026
+   },
+   {
+    "model": "logistic_regression",
+    "fields": "no_calendar",
+    "C": 0.001,
+    "valid_pr_auc": 0.12400702453068478
+   },
+   {
+    "model": "logistic_regression",
+    "fields": "no_calendar",
+    "C": 0.01,
+    "valid_pr_auc": 0.13762560223889492
+   },
+   {
+    "model": "logistic_regression",
+    "fields": "no_calendar",
+    "C": 0.1,
+    "valid_pr_auc": 0.14974508738853035
+   },
+   {
+    "model": "logistic_regression",
+    "fields": "no_calendar",
+    "C": 1.0,
+    "valid_pr_auc": 0.15236603870444465
+   },
+   {
+    "model": "gradient_boosting",
+    "fields": "no_calendar",
+    "leaves": 4,
+    "min_leaf": 20,
+    "trees": 762,
+    "valid_pr_auc": 0.1922611803113897
+   },
+   {
+    "model": "gradient_boosting",
+    "fields": "no_calendar",
+    "leaves": 4,
+    "min_leaf": 100,
+    "trees": 651,
+    "valid_pr_auc": 0.1598568216181394
+   },
+   {
+    "model": "gradient_boosting",
+    "fields": "no_calendar",
+    "leaves": 15,
+    "min_leaf": 20,
+    "trees": 298,
+    "valid_pr_auc": 0.19031359367391137
+   },
+   {
+    "model": "gradient_boosting",
+    "fields": "no_calendar",
+    "leaves": 15,
+    "min_leaf": 100,
+    "trees": 285,
+    "valid_pr_auc": 0.1627354110288039
+   },
+   {
+    "model": "logistic_regression",
+    "fields": "no_calendar_no_rep",
+    "C": 0.001,
+    "valid_pr_auc": 0.12412899478612974
+   },
+   {
+    "model": "logistic_regression",
+    "fields": "no_calendar_no_rep",
+    "C": 0.01,
+    "valid_pr_auc": 0.13793266246979477
+   },
+   {
+    "model": "logistic_regression",
+    "fields": "no_calendar_no_rep",
+    "C": 0.1,
+    "valid_pr_auc": 0.15068083340702965
+   },
+   {
+    "model": "logistic_regression",
+    "fields": "no_calendar_no_rep",
+    "C": 1.0,
+    "valid_pr_auc": 0.1532110821054638
+   },
+   {
+    "model": "gradient_boosting",
+    "fields": "no_calendar_no_rep",
+    "leaves": 4,
+    "min_leaf": 20,
+    "trees": 681,
+    "valid_pr_auc": 0.19650764208461993
+   },
+   {
+    "model": "gradient_boosting",
+    "fields": "no_calendar_no_rep",
+    "leaves": 4,
+    "min_leaf": 100,
+    "trees": 702,
+    "valid_pr_auc": 0.1702912168682928
+   },
+   {
+    "model": "gradient_boosting",
+    "fields": "no_calendar_no_rep",
+    "leaves": 15,
+    "min_leaf": 20,
+    "trees": 301,
+    "valid_pr_auc": 0.198986582327352
+   },
+   {
+    "model": "gradient_boosting",
+    "fields": "no_calendar_no_rep",
+    "leaves": 15,
+    "min_leaf": 100,
+    "trees": 414,
+    "valid_pr_auc": 0.17811353484361436
+   }
+  ]
+ },
+ "fields": {
+  "logistic_regression": [
+   "VehiclePrice",
+   "Days_Policy_Accident",
+   "Days_Policy_Claim",
+   "PastNumberOfClaims",
+   "AgeOfVehicle",
+   "AgeOfPolicyHolder",
+   "NumberOfSuppliments",
+   "AddressChange_Claim",
+   "NumberOfCars",
+   "Age",
+   "Deductible",
+   "DriverRating",
+   "Make",
+   "AccidentArea",
+   "Fault",
+   "PolicyType",
+   "VehicleCategory",
+   "BasePolicy",
+   "PoliceReportFiled",
+   "WitnessPresent",
+   "AgentType"
+  ],
+  "gradient_boosting": [
+   "VehiclePrice",
+   "Days_Policy_Accident",
+   "Days_Policy_Claim",
+   "PastNumberOfClaims",
+   "AgeOfVehicle",
+   "AgeOfPolicyHolder",
+   "NumberOfSuppliments",
+   "AddressChange_Claim",
+   "NumberOfCars",
+   "Age",
+   "Deductible",
+   "DriverRating",
+   "Make",
+   "AccidentArea",
+   "Fault",
+   "PolicyType",
+   "VehicleCategory",
+   "BasePolicy",
+   "PoliceReportFiled",
+   "WitnessPresent",
+   "AgentType"
+  ]
+ },
+ "test": {
+  "point": {
+   "logistic_regression": {
+    "roc_auc": 0.7659399983016097,
+    "pr_auc": 0.11218360746906109,
+    "capture_top1": 0.009389671361502348,
+    "capture_top5": 0.1267605633802817,
+    "capture_top10": 0.22535211267605634
+   },
+   "gradient_boosting": {
+    "roc_auc": 0.7886935740194829,
+    "pr_auc": 0.16249202353146688,
+    "capture_top1": 0.04225352112676056,
+    "capture_top5": 0.15492957746478872,
+    "capture_top10": 0.29107981220657275
+   }
+  },
+  "ci95": {
+   "logistic_regression": {
+    "roc_auc": [
+     0.7415319987467422,
+     0.7890288494701964
+    ],
+    "pr_auc": [
+     0.09532374918078548,
+     0.1363997216511386
+    ],
+    "capture_top1": [
+     0.0,
+     0.03349282296650718
+    ],
+    "capture_top5": [
+     0.08079259576901088,
+     0.16666666666666666
+    ],
+    "capture_top10": [
+     0.16738252569750367,
+     0.27450980392156865
+    ]
+   },
+   "gradient_boosting": {
+    "roc_auc": [
+     0.7660175615883771,
+     0.8095542614784331
+    ],
+    "pr_auc": [
+     0.1274795002096539,
+     0.202221538445295
+    ],
+    "capture_top1": [
+     0.022518118677336555,
+     0.07407865786578655
+    ],
+    "capture_top5": [
+     0.10908640864086408,
+     0.20100072540226843
+    ],
+    "capture_top10": [
+     0.2278965061170506,
+     0.3465379537953795
+    ]
+   }
+  },
+  "difference_gb_minus_lr": {
+   "roc_auc": {
+    "point": 0.022753575717873176,
+    "ci95": [
+     0.008008423788250984,
+     0.038828866899391884
+    ]
+   },
+   "pr_auc": {
+    "point": 0.0503084160624058,
+    "ci95": [
+     0.018015549628028697,
+     0.0827920090746477
+    ]
+   },
+   "capture_top1": {
+    "point": 0.03286384976525822,
+    "ci95": [
+     0.0043859649122807015,
+     0.06075479355886091
+    ]
+   },
+   "capture_top5": {
+    "point": 0.028169014084507032,
+    "ci95": [
+     -0.014224878082285852,
+     0.07844103158504775
+    ]
+   },
+   "capture_top10": {
+    "point": 0.06572769953051641,
+    "ci95": [
+     0.013157894736842146,
+     0.11630576649264343
+    ]
+   }
+  },
+  "n_boot": 2000
+ },
+ "decision": {
+  "keep_gradient_boosting": true,
+  "primary": "gradient_boosting",
+  "rule": "keep gradient boosting only if the 95% interval of its AUC gain over logistic regression on 1996 excludes zero"
+ },
+ "calibration": {
+  "logistic_regression": {
+   "brier": 0.04919936546553264,
+   "brier_base_rate_only": 0.049446073331782116,
+   "mean_predicted": 0.05844051478672992,
+   "observed_rate": 0.05216752387950037,
+   "ece_10_bins": 0.02428067281117544,
+   "bins": [
+    {
+     "mean_pred": 0.0017396957841700406,
+     "observed": 0.0
+    },
+    {
+     "mean_pred": 0.004924726771578169,
+     "observed": 0.012224938875305624
+    },
+    {
+     "mean_pred": 0.006729829115034052,
+     "observed": 0.004889975550122249
+    },
+    {
+     "mean_pred": 0.008809623750846103,
+     "observed": 0.0024509803921568627
+    },
+    {
+     "mean_pred": 0.01294677477947892,
+     "observed": 0.00980392156862745
+    },
+    {
+     "mean_pred": 0.0300601058163487,
+     "observed": 0.056372549019607844
+    },
+    {
+     "mean_pred": 0.06463564126276583,
+     "observed": 0.09803921568627451
+    },
+    {
+     "mean_pred": 0.09212558660598105,
+     "observed": 0.11519607843137254
+    },
+    {
+     "mean_pred": 0.1328944020879769,
+     "observed": 0.1053921568627451
+    },
+    {
+     "mean_pred": 0.2299356425124562,
+     "observed": 0.11764705882352941
+    }
+   ]
+  },
+  "gradient_boosting": {
+   "brier": 0.046109667177765316,
+   "brier_base_rate_only": 0.049446073331782116,
+   "mean_predicted": 0.058180524588819275,
+   "observed_rate": 0.05216752387950037,
+   "ece_10_bins": 0.014957758566257074,
+   "bins": [
+    {
+     "mean_pred": 0.003342405550930817,
+     "observed": 0.0
+    },
+    {
+     "mean_pred": 0.003358569371399631,
+     "observed": 0.0
+    },
+    {
+     "mean_pred": 0.005550836773973474,
+     "observed": 0.004889975550122249
+    },
+    {
+     "mean_pred": 0.007223437370154255,
+     "observed": 0.00980392156862745
+    },
+    {
+     "mean_pred": 0.009370162101697724,
+     "observed": 0.004901960784313725
+    },
+    {
+     "mean_pred": 0.04289100729105359,
+     "observed": 0.041666666666666664
+    },
+    {
+     "mean_pred": 0.0796634081645306,
+     "observed": 0.11519607843137254
+    },
+    {
+     "mean_pred": 0.09384667611987578,
+     "observed": 0.10049019607843138
+    },
+    {
+     "mean_pred": 0.13071532615972836,
+     "observed": 0.09313725490196079
+    },
+    {
+     "mean_pred": 0.2062411860095303,
+     "observed": 0.15196078431372548
+    }
+   ]
+  }
+ },
+ "cost": {
+  "assumptions": {
+   "avg_fraud_loss_usd": 5000,
+   "cost_per_check_usd": 200,
+   "share_recovered": 0.5
+  },
+  "break_even_hit_rate": 0.08,
+  "test_base_rate": 0.05216752387950037,
+  "check_everyone": {
+   "share_checked": 1.0,
+   "checked": 4083,
+   "caught": 213.0,
+   "missed": 0.0,
+   "net_saving_usd": -284100.0
+  },
+  "logistic_regression": {
+   "depth_chosen_on_1995": {
+    "share_checked": 0.4491795248591722,
+    "checked": 1834,
+    "caught": 197.0,
+    "missed": 16.0,
+    "net_saving_usd": 125700.0
+   },
+   "hindsight_best_on_1996": {
+    "share_checked": 0.4104824883663973,
+    "checked": 1676,
+    "caught": 188.0,
+    "missed": 25.0,
+    "net_saving_usd": 134800.0
+   }
+  },
+  "gradient_boosting": {
+   "depth_chosen_on_1995": {
+    "share_checked": 0.420034288513348,
+    "checked": 1715,
+    "caught": 193.0,
+    "missed": 20.0,
+    "net_saving_usd": 139500.0,
+    "net_saving_ci95": [
+     77000.0,
+     204562.49999999965
+    ]
+   },
+   "hindsight_best_on_1996": {
+    "share_checked": 0.40166544207690424,
+    "checked": 1640,
+    "caught": 190.0,
+    "missed": 23.0,
+    "net_saving_usd": 147000.0
+   }
+  },
+  "sensitivity": [
+   {
+    "cost_per_check_usd": 50,
+    "avg_fraud_loss_usd": 2000,
+    "share_checked": 0.4484447710017144,
+    "checked": 1831,
+    "caught": 203.0,
+    "missed": 10.0,
+    "net_saving_usd": 111450.0
+   },
+   {
+    "cost_per_check_usd": 50,
+    "avg_fraud_loss_usd": 5000,
+    "share_checked": 0.4599559147685525,
+    "checked": 1878,
+    "caught": 204.0,
+    "missed": 9.0,
+    "net_saving_usd": 416100.0
+   },
+   {
+    "cost_per_check_usd": 50,
+    "avg_fraud_loss_usd": 10000,
+    "share_checked": 0.47685525349008084,
+    "checked": 1947,
+    "caught": 205.0,
+    "missed": 8.0,
+    "net_saving_usd": 927650.0
+   },
+   {
+    "cost_per_check_usd": 100,
+    "avg_fraud_loss_usd": 2000,
+    "share_checked": 0.2576536860151849,
+    "checked": 1052,
+    "caught": 122.0,
+    "missed": 91.0,
+    "net_saving_usd": 16800.0
+   },
+   {
+    "cost_per_check_usd": 100,
+    "avg_fraud_loss_usd": 5000,
+    "share_checked": 0.4528532941464609,
+    "checked": 1849,
+    "caught": 204.0,
+    "missed": 9.0,
+    "net_saving_usd": 325100.0
+   },
+   {
+    "cost_per_check_usd": 100,
+    "avg_fraud_loss_usd": 10000,
+    "share_checked": 0.4599559147685525,
+    "checked": 1878,
+    "caught": 204.0,
+    "missed": 9.0,
+    "net_saving_usd": 832200.0
+   },
+   {
+    "cost_per_check_usd": 200,
+    "avg_fraud_loss_usd": 2000,
+    "share_checked": 0.017389174626500123,
+    "checked": 71,
+    "caught": 17.0,
+    "missed": 196.0,
+    "net_saving_usd": 2800.0
+   },
+   {
+    "cost_per_check_usd": 200,
+    "avg_fraud_loss_usd": 5000,
+    "share_checked": 0.420034288513348,
+    "checked": 1715,
+    "caught": 193.0,
+    "missed": 20.0,
+    "net_saving_usd": 139500.0
+   },
+   {
+    "cost_per_check_usd": 200,
+    "avg_fraud_loss_usd": 10000,
+    "share_checked": 0.4528532941464609,
+    "checked": 1849,
+    "caught": 204.0,
+    "missed": 9.0,
+    "net_saving_usd": 650200.0
+   },
+   {
+    "cost_per_check_usd": 400,
+    "avg_fraud_loss_usd": 2000,
+    "share_checked": 0.0014695077149155032,
+    "checked": 6,
+    "caught": 6.0,
+    "missed": 207.0,
+    "net_saving_usd": 3600.0
+   },
+   {
+    "cost_per_check_usd": 400,
+    "avg_fraud_loss_usd": 5000,
+    "share_checked": 0.11119275042860642,
+    "checked": 454,
+    "caught": 66.0,
+    "missed": 147.0,
+    "net_saving_usd": -16600.0
+   },
+   {
+    "cost_per_check_usd": 400,
+    "avg_fraud_loss_usd": 10000,
+    "share_checked": 0.420034288513348,
+    "checked": 1715,
+    "caught": 193.0,
+    "missed": 20.0,
+    "net_saving_usd": 279000.0
+   }
+  ]
+ },
+ "importance": [
+  {
+   "field": "Fault",
+   "mean_abs_push": 1.0670122146077559
+  },
+  {
+   "field": "BasePolicy",
+   "mean_abs_push": 0.7505355367110821
+  },
+  {
+   "field": "PolicyType",
+   "mean_abs_push": 0.1476950293158274
+  },
+  {
+   "field": "Make",
+   "mean_abs_push": 0.0848538070114581
+  },
+  {
+   "field": "Age",
+   "mean_abs_push": 0.05633283395475473
+  },
+  {
+   "field": "AddressChange_Claim",
+   "mean_abs_push": 0.0405227719561375
+  },
+  {
+   "field": "AgeOfPolicyHolder",
+   "mean_abs_push": 0.03178042499666611
+  },
+  {
+   "field": "VehiclePrice",
+   "mean_abs_push": 0.02865453928590453
+  },
+  {
+   "field": "AgeOfVehicle",
+   "mean_abs_push": 0.028084793861635884
+  },
+  {
+   "field": "NumberOfSuppliments",
+   "mean_abs_push": 0.0258510546748215
+  },
+  {
+   "field": "Deductible",
+   "mean_abs_push": 0.025570288162224085
+  },
+  {
+   "field": "AccidentArea",
+   "mean_abs_push": 0.024804474538986588
+  },
+  {
+   "field": "PastNumberOfClaims",
+   "mean_abs_push": 0.02236984249071505
+  },
+  {
+   "field": "DriverRating",
+   "mean_abs_push": 0.01632921189567392
+  },
+  {
+   "field": "PoliceReportFiled",
+   "mean_abs_push": 0.007677679966011465
+  },
+  {
+   "field": "NumberOfCars",
+   "mean_abs_push": 0.007603697633890509
+  },
+  {
+   "field": "AgentType",
+   "mean_abs_push": 0.002904544111020297
+  },
+  {
+   "field": "VehicleCategory",
+   "mean_abs_push": 0.0012299804179181748
+  },
+  {
+   "field": "Days_Policy_Accident",
+   "mean_abs_push": 0.0011885308898928221
+  },
+  {
+   "field": "Days_Policy_Claim",
+   "mean_abs_push": 0.0003248706576483945
+  },
+  {
+   "field": "WitnessPresent",
+   "mean_abs_push": 0.0
+  }
+ ],
+ "checks": {
+  "with_sex_and_marital_status": {
+   "logistic_regression": {
+    "roc_auc": 0.7682043163373004,
+    "pr_auc": 0.11374382961562932,
+    "capture_top1": 0.023474178403755867,
+    "capture_top5": 0.1267605633802817,
+    "capture_top10": 0.2347417840375587
+   },
+   "gradient_boosting": {
+    "roc_auc": 0.7884321432470794,
+    "pr_auc": 0.16179278802571623,
+    "capture_top1": 0.051643192488262914,
+    "capture_top5": 0.14553990610328638,
+    "capture_top10": 0.2863849765258216
+   }
+  },
+  "all_fields_incl_calendar": {
+   "logistic_regression": {
+    "roc_auc": 0.7387851657750119,
+    "pr_auc": 0.09503165896242242,
+    "capture_top1": 0.009389671361502348,
+    "capture_top5": 0.07981220657276995,
+    "capture_top10": 0.14553990610328638
+   },
+   "gradient_boosting": {
+    "roc_auc": 0.7598900898933654,
+    "pr_auc": 0.1430425486374385,
+    "capture_top1": 0.04225352112676056,
+    "capture_top5": 0.13145539906103287,
+    "capture_top10": 0.2300469483568075
+   }
+  },
+  "random_5fold_all_years": {
+   "logistic_regression": {
+    "roc_auc": 0.7984802175606102,
+    "pr_auc": 0.16042705688864803,
+    "capture_top1": 0.0390032502708559,
+    "capture_top5": 0.1646803900325027,
+    "capture_top10": 0.2990249187432286
+   },
+   "gradient_boosting": {
+    "roc_auc": 0.823068224000617,
+    "pr_auc": 0.22686971393427244,
+    "capture_top1": 0.07042253521126761,
+    "capture_top5": 0.18743228602383533,
+    "capture_top10": 0.3401950162513543
+   }
+  }
+ },
+ "facts": {
+  "age_recorded_zero": 320,
+  "at_fault_non_liability": {
+   "share_of_frauds": 0.9219934994582882,
+   "share_of_claims": 0.45058365758754865,
+   "fraud_rate_inside": 0.12248128957973517,
+   "fraud_rate_outside": 0.0084985835694051,
+   "test_claims": 1812,
+   "test_frauds": 196
+  },
+  "address_2to3y_deductible_500": {
+   "train_claims": 184,
+   "train_frauds": 36,
+   "test_claims": 69,
+   "test_frauds": 9
+  }
+ },
+ "software": {
+  "lightgbm": "4.7.0",
+  "scikit-learn": "1.9.1",
+  "pandas": "3.1.1",
+  "numpy": "2.5.5"
+ }
+}
