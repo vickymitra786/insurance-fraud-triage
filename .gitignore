@@ -1,8 +1,6 @@
 .venv/
 data/
 __pycache__/
-CLAUDE.md
-.claude/
 paper/node_modules/
 *.pyc
 ~$*
